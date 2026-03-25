@@ -100,8 +100,36 @@ aboutOverlay.addEventListener('click', (e) => {
   if (e.target === aboutOverlay) closeAbout();
 });
 
+// Contact form overlay
+const contactOverlay = document.getElementById('contactOverlay');
+const contactClose = document.getElementById('contactClose');
+const contactTriggers = document.querySelectorAll('#contactTrigger, .contact-trigger');
+
+function openContact(e) {
+  e.preventDefault();
+  contactOverlay.classList.add('open');
+  contactOverlay.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('about-open');
+  contactOverlay.scrollTop = 0;
+  links.classList.remove('open');
+  contactClose.focus();
+}
+
+function closeContact() {
+  contactOverlay.classList.remove('open');
+  contactOverlay.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('about-open');
+}
+
+contactTriggers.forEach(trigger => trigger.addEventListener('click', openContact));
+contactClose.addEventListener('click', closeContact);
+contactOverlay.addEventListener('click', (e) => {
+  if (e.target === contactOverlay) closeContact();
+});
+
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && aboutOverlay.classList.contains('open')) {
-    closeAbout();
+  if (e.key === 'Escape') {
+    if (aboutOverlay.classList.contains('open')) closeAbout();
+    if (contactOverlay.classList.contains('open')) closeContact();
   }
 });

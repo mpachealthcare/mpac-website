@@ -515,6 +515,57 @@ body.about-open {
   flex-shrink: 0;
 }
 
+/* ─── CONTACT FORM ─── */
+.contact-form-body {
+  padding: 32px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-group label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--mpac-dark-blue);
+  letter-spacing: 0.3px;
+}
+.form-group input,
+.form-group textarea {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 15px;
+  padding: 12px 14px;
+  border: 1.5px solid rgba(3,50,76,0.15);
+  border-radius: 10px;
+  background: var(--mpac-off-white);
+  color: var(--mpac-dark-blue);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--mpac-lightest-blue);
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--mpac-medium-blue);
+  box-shadow: 0 0 0 3px rgba(51,101,138,0.1);
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
 /* ─── ANIMATIONS ─── */
 .fade-up {
   opacity: 0; transform: translateY(24px);
@@ -562,4 +613,6 @@ body.about-open {
   .about-overlay { padding: 10px 8px; }
   .about-panel { border-radius: 12px; border-width: 2px; }
   .about-overlay-header-inner { padding: 0 16px; height: 56px; }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form-body { padding: 24px 20px; }
 }
