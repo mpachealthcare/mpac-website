@@ -455,18 +455,7 @@ body.about-open {
 .us-map {
   width: 100%;
   height: auto;
-}
-.us-map .states path {
-  fill: var(--mpac-tint);
-  stroke: var(--mpac-white);
-  stroke-width: 2;
-  transition: fill 0.3s;
-}
-.us-map .states path.active {
-  fill: var(--mpac-medium-blue);
-}
-.us-map .states path.active:hover {
-  fill: var(--mpac-dark-blue);
+  border-radius: 12px;
 }
 
 .leadership-grid {
