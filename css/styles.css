@@ -507,6 +507,23 @@ body.about-open {
 .leader-card p {
   font-size: 15px; color: var(--mpac-light-grey); line-height: 1.65;
 }
+.leader-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--mpac-medium-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.leader-linkedin:hover {
+  color: var(--mpac-dark-blue);
+}
+.leader-linkedin svg {
+  flex-shrink: 0;
+}
 
 /* ─── ANIMATIONS ─── */
 .fade-up {
