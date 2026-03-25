@@ -18,6 +18,7 @@
         MPAC Healthcare
       </a>
       <ul class="nav-links" id="navLinks">
+        <li><a href="#" id="aboutTrigger">About Us</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#communities">Communities</a></li>
         <li><a href="#patients">Patients & Families</a></li>
@@ -284,6 +285,7 @@
       <div>
         <h4>Explore</h4>
         <ul class="footer-links">
+          <li><a href="#" class="about-trigger">About Us</a></li>
           <li><a href="#communities">Communities</a></li>
           <li><a href="#patients">Patients & Families</a></li>
           <li><a href="#careers">Join Our Team</a></li>
@@ -309,6 +311,104 @@
     </div>
   </div>
 </footer>
+
+<!-- ─── ABOUT US OVERLAY ─── -->
+<div class="about-overlay" id="aboutOverlay" aria-hidden="true" role="dialog" aria-label="About MPAC Healthcare">
+  <div class="about-overlay-header">
+    <div class="container-wide">
+      <div class="about-overlay-header-inner">
+        <a href="#" class="nav-logo" onclick="closeAbout(); return false;">
+          <div class="logo-mark">M</div>
+          MPAC Healthcare
+        </a>
+        <button class="about-close" id="aboutClose" aria-label="Close About Us">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-overlay-body">
+
+    <!-- MISSION -->
+    <section class="about-section">
+      <div class="container">
+        <div class="section-label">Our Mission</div>
+        <h2 class="section-title">Raising the standard in post-acute care.</h2>
+        <p class="about-mission-text">MPAC Healthcare is dedicated to transforming post-acute care by embedding proactive, patient-centered clinical teams directly into skilled nursing and assisted living communities. We believe every patient deserves access to high-quality medical and behavioral health services — right where they live.</p>
+        <p class="section-sub" style="margin-top:24px; max-width:720px;">Our mission is to prevent complications before they escalate, reduce unnecessary hospital readmissions, and deliver measurable improvements in patient outcomes — all while lowering costs across the healthcare system.</p>
+      </div>
+    </section>
+
+    <!-- GEOGRAPHIC FOOTPRINT -->
+    <section class="about-section about-section-alt">
+      <div class="container">
+        <div class="section-label">Where We Serve</div>
+        <h2 class="section-title">Our geographic footprint.</h2>
+        <p class="section-sub">MPAC Healthcare partners with post-acute facilities across the country, bringing our proven care model to communities that need it most.</p>
+        <div class="geo-grid">
+          <div class="geo-card">
+            <h4>Illinois</h4>
+            <p>Headquarters &amp; Operations</p>
+          </div>
+          <div class="geo-card">
+            <h4>Indiana</h4>
+            <p>Active Markets</p>
+          </div>
+          <div class="geo-card">
+            <h4>Ohio</h4>
+            <p>Active Markets</p>
+          </div>
+          <div class="geo-card">
+            <h4>Michigan</h4>
+            <p>Active Markets</p>
+          </div>
+          <div class="geo-card">
+            <h4>Wisconsin</h4>
+            <p>Active Markets</p>
+          </div>
+          <div class="geo-card">
+            <h4>Missouri</h4>
+            <p>Active Markets</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section class="about-section">
+      <div class="container">
+        <div class="section-label">Leadership</div>
+        <h2 class="section-title">Meet our team.</h2>
+        <p class="section-sub">The people behind MPAC Healthcare bring decades of experience in post-acute care, clinical operations, and healthcare leadership.</p>
+        <div class="leadership-grid">
+          <div class="leader-card">
+            <div class="leader-photo">JD</div>
+            <h4>Jane Doe</h4>
+            <div class="leader-title">Chief Executive Officer</div>
+            <p>20+ years in post-acute healthcare leadership, driving operational excellence and strategic growth.</p>
+          </div>
+          <div class="leader-card">
+            <div class="leader-photo">JS</div>
+            <h4>John Smith</h4>
+            <div class="leader-title">Chief Clinical Officer</div>
+            <p>Board-certified physician with deep expertise in skilled nursing facility care and clinical program development.</p>
+          </div>
+          <div class="leader-card">
+            <div class="leader-photo">MJ</div>
+            <h4>Mary Johnson</h4>
+            <div class="leader-title">VP of Operations</div>
+            <p>Specializes in scaling clinical teams across multi-state post-acute networks with a focus on quality outcomes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
 
 <script src="js/main.js"></script>
 </body>

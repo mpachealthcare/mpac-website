@@ -25,3 +25,33 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// About Us overlay
+const aboutOverlay = document.getElementById('aboutOverlay');
+const aboutClose = document.getElementById('aboutClose');
+const aboutTriggers = document.querySelectorAll('#aboutTrigger, .about-trigger');
+
+function openAbout(e) {
+  e.preventDefault();
+  aboutOverlay.classList.add('open');
+  aboutOverlay.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('about-open');
+  aboutOverlay.scrollTop = 0;
+  links.classList.remove('open');
+  aboutClose.focus();
+}
+
+function closeAbout() {
+  aboutOverlay.classList.remove('open');
+  aboutOverlay.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('about-open');
+}
+
+aboutTriggers.forEach(trigger => trigger.addEventListener('click', openAbout));
+aboutClose.addEventListener('click', closeAbout);
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && aboutOverlay.classList.contains('open')) {
+    closeAbout();
+  }
+});
