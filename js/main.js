@@ -50,6 +50,11 @@ function closeAbout() {
 aboutTriggers.forEach(trigger => trigger.addEventListener('click', openAbout));
 aboutClose.addEventListener('click', closeAbout);
 
+// Close when clicking the dark backdrop (outside the panel)
+aboutOverlay.addEventListener('click', (e) => {
+  if (e.target === aboutOverlay) closeAbout();
+});
+
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && aboutOverlay.classList.contains('open')) {
     closeAbout();
