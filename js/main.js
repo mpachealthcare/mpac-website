@@ -2,6 +2,73 @@
    MPAC Healthcare — Main JavaScript
    ═══════════════════════════════════════════════ */
 
+// ─── POPULATE PAGE FROM content.js ───
+(function populateContent() {
+  // Helper: resolve a dot-path like "hero.headline" from the CONTENT object
+  function resolve(path) {
+    return path.split('.').reduce((obj, key) => obj && obj[key], CONTENT);
+  }
+
+  // 1. Simple text elements: [data-content="path.to.value"]
+  document.querySelectorAll('[data-content]').forEach(el => {
+    const val = resolve(el.getAttribute('data-content'));
+    if (val !== undefined) el.innerHTML = val;
+  });
+
+  // 2. Page title
+  const titleEl = document.querySelector('[data-content="siteTitle"]');
+  if (titleEl) document.title = CONTENT.siteTitle;
+
+  // 3. Difference lists: build <li> items from arrays
+  document.querySelectorAll('[data-list]').forEach(ul => {
+    const path = ul.getAttribute('data-list');
+    const items = resolve(path);
+    if (!Array.isArray(items)) return;
+    // Determine icon based on parent class
+    const isWithout = ul.closest('.without');
+    const icon = isWithout ? '✕' : '✓';
+    ul.innerHTML = items
+      .map(text => `<li><span class="diff-icon">${icon}</span> ${text}</li>`)
+      .join('');
+  });
+
+  // 4. Phone links
+  document.querySelectorAll('[data-content-phone]').forEach(el => {
+    el.textContent = CONTENT.phone;
+    el.href = 'tel:' + CONTENT.phoneLink;
+  });
+
+  // 5. Email links
+  document.querySelectorAll('[data-content-email]').forEach(el => {
+    el.textContent = CONTENT.email;
+    el.href = 'mailto:' + CONTENT.email;
+  });
+
+  // 6. Copyright
+  document.querySelectorAll('[data-content-copyright]').forEach(el => {
+    el.innerHTML = `&copy; ${CONTENT.copyrightYear} ${CONTENT.companyName}. All rights reserved.`;
+  });
+
+  // 7. CTA phone button
+  const ctaPhoneBtn = document.querySelector('.cta-buttons [data-content-phone]');
+  if (ctaPhoneBtn) {
+    ctaPhoneBtn.textContent = 'Call ' + CONTENT.phone;
+    ctaPhoneBtn.href = 'tel:' + CONTENT.phoneLink;
+  }
+
+  // 8. Careers URL
+  const careersLink = document.querySelector('[data-href="careersUrl"]');
+  if (careersLink) careersLink.href = CONTENT.careersUrl;
+
+  // 9. Contact form email subject
+  const subjectInput = document.querySelector('input[name="_subject"]');
+  if (subjectInput) subjectInput.value = CONTENT.contactForm.emailSubject;
+
+  // 10. Form action email
+  const form = document.getElementById('contactForm');
+  if (form) form.action = 'https://formsubmit.co/' + CONTENT.email;
+})();
+
 // Nav scroll effect
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
@@ -26,32 +93,8 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-// ─── TEAM DATA ───
-// To add/edit team members, just update this array.
-// Each entry: { name, initials, title, bio, linkedin }
-const teamMembers = [
-  {
-    name: 'Jane Doe',
-    initials: 'JD',
-    title: 'Chief Executive Officer',
-    bio: '20+ years in post-acute healthcare leadership, driving operational excellence and strategic growth.',
-    linkedin: 'https://www.linkedin.com/in/'
-  },
-  {
-    name: 'John Smith',
-    initials: 'JS',
-    title: 'Chief Clinical Officer',
-    bio: 'Board-certified physician with deep expertise in skilled nursing facility care and clinical program development.',
-    linkedin: 'https://www.linkedin.com/in/'
-  },
-  {
-    name: 'Mary Johnson',
-    initials: 'MJ',
-    title: 'VP of Operations',
-    bio: 'Specializes in scaling clinical teams across multi-state post-acute networks with a focus on quality outcomes.',
-    linkedin: 'https://www.linkedin.com/in/'
-  }
-];
+// ─── TEAM DATA (from content.js) ───
+const teamMembers = CONTENT.team;
 
 // Render team cards
 const leadershipGrid = document.getElementById('leadershipGrid');

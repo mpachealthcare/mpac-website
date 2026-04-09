@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MPAC Healthcare — Raising the Standard in Post-Acute Care</title>
+  <title data-content="siteTitle">MPAC Healthcare — Raising the Standard in Post-Acute Care</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -36,11 +36,11 @@
 <section class="hero" id="home">
   <div class="container">
     <div class="hero-content fade-up">
-      <h1>Raising the standard in <span>post-acute care.</span></h1>
-      <p>MPAC Healthcare is a proven industry leader delivering proactive, patient-centered care to post-acute facilities across the country. We keep patients healthier, reduce readmissions, and lower costs.</p>
+      <h1 data-content="hero.headline">Raising the standard in <span>post-acute care.</span></h1>
+      <p data-content="hero.description">MPAC Healthcare is a proven industry leader delivering proactive, patient-centered care to post-acute facilities across the country. We keep patients healthier, reduce readmissions, and lower costs.</p>
       <div class="hero-buttons">
-        <a href="#" class="btn btn-primary contact-trigger">Partner With Us →</a>
-        <a href="#services" class="btn btn-outline">Explore Services</a>
+        <a href="#" class="btn btn-primary contact-trigger" data-content="hero.primaryButton">Partner With Us →</a>
+        <a href="#services" class="btn btn-outline" data-content="hero.secondaryButton">Explore Services</a>
       </div>
     </div>
   </div>
@@ -50,30 +50,30 @@
 <section class="section" id="mission">
   <div class="container">
     <div class="fade-up">
-      <h2 class="section-title">Our single objective is proactive,<br>patient-centered care.</h2>
-      <p class="section-sub">In every case, our focus is on preventing complications, eliminating patient attrition, and reducing cost across the entire health care system.</p>
+      <h2 class="section-title" data-content="mission.headline">Our single objective is proactive,<br>patient-centered care.</h2>
+      <p class="section-sub" data-content="mission.subheadline">In every case, our focus is on preventing complications, eliminating patient attrition, and reducing cost across the entire health care system.</p>
     </div>
-    <div class="values-grid">
+    <div class="values-grid" data-list="mission.cards">
       <div class="value-card fade-up">
         <div class="value-icon">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M9 12l2 2 4-4"/></svg>
         </div>
-        <h3>Preventing</h3>
-        <p>Preventing patients from returning to a higher level of care through early intervention and proactive monitoring by on-site practitioners.</p>
+        <h3 data-content="mission.cards.0.title">Preventing</h3>
+        <p data-content="mission.cards.0.description">Preventing patients from returning to a higher level of care through early intervention and proactive monitoring by on-site practitioners.</p>
       </div>
       <div class="value-card fade-up" style="transition-delay:0.1s">
         <div class="value-icon">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
-        <h3>Eliminating</h3>
-        <p>Eliminating patient attrition from your health system by ensuring seamless care coordination and consistent follow-through.</p>
+        <h3 data-content="mission.cards.1.title">Eliminating</h3>
+        <p data-content="mission.cards.1.description">Eliminating patient attrition from your health system by ensuring seamless care coordination and consistent follow-through.</p>
       </div>
       <div class="value-card fade-up" style="transition-delay:0.2s">
         <div class="value-icon">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
         </div>
-        <h3>Reducing</h3>
-        <p>Reducing cost for the entire health care system by treating in place, managing conditions early, and avoiding unnecessary hospital transfers.</p>
+        <h3 data-content="mission.cards.2.title">Reducing</h3>
+        <p data-content="mission.cards.2.description">Reducing cost for the entire health care system by treating in place, managing conditions early, and avoiding unnecessary hospital transfers.</p>
       </div>
     </div>
   </div>
@@ -83,29 +83,29 @@
 <section class="section section-alt" id="services">
   <div class="container">
     <div class="fade-up">
-      <div class="section-label">Our Services</div>
-      <h2 class="section-title">How we support your facility.</h2>
+      <div class="section-label" data-content="services.label">Our Services</div>
+      <h2 class="section-title" data-content="services.headline">How we support your facility.</h2>
     </div>
     <div class="services-grid">
       <div class="service-card fade-up">
-        <div class="service-num">01</div>
+        <div class="service-num" data-content="services.cards.0.number">01</div>
         <div>
-          <h3>Primary Care Program</h3>
-          <p>High presence on-site Nurse Practitioners assessing and treating changes in condition, conducting lab reviews, and collaborating with community partners to improve patient satisfaction and reduce readmissions.</p>
+          <h3 data-content="services.cards.0.title">Primary Care Program</h3>
+          <p data-content="services.cards.0.description">High presence on-site Nurse Practitioners assessing and treating changes in condition, conducting lab reviews, and collaborating with community partners to improve patient satisfaction and reduce readmissions.</p>
         </div>
       </div>
       <div class="service-card fade-up" style="transition-delay:0.1s">
-        <div class="service-num">02</div>
+        <div class="service-num" data-content="services.cards.1.number">02</div>
         <div>
-          <h3>Mental Health Program</h3>
-          <p>Licensed Mental Health Clinicians embedded in your community to provide behavioral health assessments, therapy, and emotional support for residents—addressing the full spectrum of wellness.</p>
+          <h3 data-content="services.cards.1.title">Mental Health Program</h3>
+          <p data-content="services.cards.1.description">Licensed Mental Health Clinicians embedded in your community to provide behavioral health assessments, therapy, and emotional support for residents—addressing the full spectrum of wellness.</p>
         </div>
       </div>
       <div class="service-card fade-up" style="transition-delay:0.2s">
-        <div class="service-num">03</div>
+        <div class="service-num" data-content="services.cards.2.number">03</div>
         <div>
-          <h3>Physician Services</h3>
-          <p>Experienced physicians supporting your facility's clinical needs, complementing the work of attending physicians and ensuring comprehensive medical oversight for all residents.</p>
+          <h3 data-content="services.cards.2.title">Physician Services</h3>
+          <p data-content="services.cards.2.description">Experienced physicians supporting your facility's clinical needs, complementing the work of attending physicians and ensuring comprehensive medical oversight for all residents.</p>
         </div>
       </div>
     </div>
@@ -116,9 +116,9 @@
 <section class="section" id="communities">
   <div class="container">
     <div class="fade-up">
-      <div class="section-label">For Communities</div>
-      <h2 class="section-title">Post-acute solutions tailored to your facility.</h2>
-      <p class="section-sub">MPAC works exclusively in post-acute settings—SNFs, LTCs, and assisted living communities. Our established framework uniquely positions us to custom tailor the most productive strategy for each client.</p>
+      <div class="section-label" data-content="communities.label">For Communities</div>
+      <h2 class="section-title" data-content="communities.headline">Post-acute solutions tailored to your facility.</h2>
+      <p class="section-sub" data-content="communities.description">MPAC works exclusively in post-acute settings—SNFs, LTCs, and assisted living communities. Our established framework uniquely positions us to custom tailor the most productive strategy for each client.</p>
     </div>
   </div>
 </section>
@@ -127,29 +127,17 @@
 <section class="section" id="difference">
   <div class="container">
     <div class="fade-up" style="text-align:center; max-width:600px; margin:0 auto 0;">
-      <div class="section-label">The Difference</div>
-      <h2 class="section-title">What changes when MPAC is your post-acute partner.</h2>
+      <div class="section-label" data-content="difference.label">The Difference</div>
+      <h2 class="section-title" data-content="difference.headline">What changes when MPAC is your post-acute partner.</h2>
     </div>
     <div class="diff-grid">
       <div class="diff-card without fade-up">
-        <h3>Without MPAC</h3>
-        <ul class="diff-list">
-          <li><span class="diff-icon">✕</span> Minor conditions escalate into serious, costly events</li>
-          <li><span class="diff-icon">✕</span> Physicians interrupted by non-billable patient management</li>
-          <li><span class="diff-icon">✕</span> High rates of hospital readmissions</li>
-          <li><span class="diff-icon">✕</span> Nursing staff stretched thin with clinical responsibilities</li>
-          <li><span class="diff-icon">✕</span> Limited availability for evening and weekend issues</li>
-        </ul>
+        <h3 data-content="difference.without.title">Without MPAC</h3>
+        <ul class="diff-list" data-list="difference.without.items"></ul>
       </div>
       <div class="diff-card with fade-up" style="transition-delay:0.1s">
-        <h3>With MPAC</h3>
-        <ul class="diff-list">
-          <li><span class="diff-icon">✓</span> Early intervention catches issues before they escalate</li>
-          <li><span class="diff-icon">✓</span> Physicians maintain uninterrupted rounding and billing</li>
-          <li><span class="diff-icon">✓</span> Hospital readmissions reduced 25–50% in 60–90 days</li>
-          <li><span class="diff-icon">✓</span> Nursing staff more confident with on-site provider support</li>
-          <li><span class="diff-icon">✓</span> 12-hour daily on-site coverage including weekends</li>
-        </ul>
+        <h3 data-content="difference.with.title">With MPAC</h3>
+        <ul class="diff-list" data-list="difference.with.items"></ul>
       </div>
     </div>
   </div>
@@ -160,39 +148,39 @@
   <div class="container">
     <div class="approach-content">
       <div class="fade-up">
-        <div class="section-label">How We Work</div>
-        <h2 class="section-title">Built for the realities of post-acute care.</h2>
-        <p class="section-sub" style="margin-bottom:24px;">MPAC providers deliver a high level of coordination that complements the work of the attending physician—reducing burden, improving outcomes, and enhancing your facility's reputation.</p>
-        <p class="section-sub"><strong style="color:var(--mpac-dark-blue)">For Physicians:</strong> A continued rounding schedule without interruption, reduction in non-billable activities, and fewer calls during evenings and weekends.</p>
-        <p class="section-sub" style="margin-top:16px"><strong style="color:var(--mpac-dark-blue)">For Facilities:</strong> Enhanced marketability, improved resident satisfaction, reduced risk of falls and infections, and additional support for survey readiness.</p>
+        <div class="section-label" data-content="approach.label">How We Work</div>
+        <h2 class="section-title" data-content="approach.headline">Built for the realities of post-acute care.</h2>
+        <p class="section-sub" style="margin-bottom:24px;" data-content="approach.description">MPAC providers deliver a high level of coordination that complements the work of the attending physician—reducing burden, improving outcomes, and enhancing your facility's reputation.</p>
+        <p class="section-sub" data-content-template="forPhysicians"><strong style="color:var(--mpac-dark-blue)">For Physicians:</strong> <span data-content="approach.forPhysicians">A continued rounding schedule without interruption, reduction in non-billable activities, and fewer calls during evenings and weekends.</span></p>
+        <p class="section-sub" style="margin-top:16px" data-content-template="forFacilities"><strong style="color:var(--mpac-dark-blue)">For Facilities:</strong> <span data-content="approach.forFacilities">Enhanced marketability, improved resident satisfaction, reduced risk of falls and infections, and additional support for survey readiness.</span></p>
       </div>
       <div class="approach-visual fade-up" style="transition-delay:0.15s">
         <div class="approach-step">
           <div class="step-num">1</div>
           <div>
-            <h4>Assess & Embed</h4>
-            <p>We embed dedicated medical and mental health clinicians in your community to serve the patient population and integrate with your care team.</p>
+            <h4 data-content="approach.steps.0.title">Assess & Embed</h4>
+            <p data-content="approach.steps.0.description">We embed dedicated medical and mental health clinicians in your community to serve the patient population and integrate with your care team.</p>
           </div>
         </div>
         <div class="approach-step">
           <div class="step-num">2</div>
           <div>
-            <h4>Identify & Intervene</h4>
-            <p>Proactively identify triggers and manage conditions before they escalate, treating in place whenever possible.</p>
+            <h4 data-content="approach.steps.1.title">Identify & Intervene</h4>
+            <p data-content="approach.steps.1.description">Proactively identify triggers and manage conditions before they escalate, treating in place whenever possible.</p>
           </div>
         </div>
         <div class="approach-step">
           <div class="step-num">3</div>
           <div>
-            <h4>Coordinate & Communicate</h4>
-            <p>Collaborate with community physicians, other third-party clinical vendors, and, ultimately, the patient and their families.</p>
+            <h4 data-content="approach.steps.2.title">Coordinate & Communicate</h4>
+            <p data-content="approach.steps.2.description">Collaborate with community physicians, other third-party clinical vendors, and, ultimately, the patient and their families.</p>
           </div>
         </div>
         <div class="approach-step">
           <div class="step-num">4</div>
           <div>
-            <h4>Measure & Improve</h4>
-            <p>Track readmission rates, patient outcomes, and satisfaction to continuously optimize the care model.</p>
+            <h4 data-content="approach.steps.3.title">Measure & Improve</h4>
+            <p data-content="approach.steps.3.description">Track readmission rates, patient outcomes, and satisfaction to continuously optimize the care model.</p>
           </div>
         </div>
       </div>
@@ -204,12 +192,12 @@
 <section class="cta-section" id="contact">
   <div class="container">
     <div class="cta-inner fade-up">
-      <div class="section-label">Get Started</div>
-      <h2>Ready to raise the standard at your facility?</h2>
-      <p>Contact us to learn how MPAC Healthcare can reduce readmissions, improve outcomes, and support your clinical team.</p>
+      <div class="section-label" data-content="cta.label">Get Started</div>
+      <h2 data-content="cta.headline">Ready to raise the standard at your facility?</h2>
+      <p data-content="cta.description">Contact us to learn how MPAC Healthcare can reduce readmissions, improve outcomes, and support your clinical team.</p>
       <div class="cta-buttons">
-        <a href="#" class="btn btn-primary contact-trigger">Contact Us →</a>
-        <a href="tel:8886604425" class="btn btn-outline">Call (888) 660-4425</a>
+        <a href="#" class="btn btn-primary contact-trigger" data-content="cta.primaryButton">Contact Us →</a>
+        <a href="tel:8886604425" class="btn btn-outline" data-content-phone>Call (888) 660-4425</a>
       </div>
     </div>
   </div>
@@ -219,31 +207,31 @@
 <section class="section section-alt" id="patients">
   <div class="container">
     <div class="fade-up" style="text-align:center; max-width:640px; margin:0 auto;">
-      <div class="section-label">Patients & Families</div>
-      <h2 class="section-title">Your care team, right where you live.</h2>
-      <p class="section-sub" style="margin:16px auto 40px;">MPAC Healthcare providers are embedded in your community, delivering personalized, proactive care so you can focus on recovery and well-being without the hassle of traveling to outside appointments.</p>
+      <div class="section-label" data-content="patients.label">Patients & Families</div>
+      <h2 class="section-title" data-content="patients.headline">Your care team, right where you live.</h2>
+      <p class="section-sub" style="margin:16px auto 40px;" data-content="patients.description">MPAC Healthcare providers are embedded in your community, delivering personalized, proactive care so you can focus on recovery and well-being without the hassle of traveling to outside appointments.</p>
     </div>
     <div class="values-grid">
       <div class="value-card fade-up">
         <div class="value-icon">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </div>
-        <h3>Care That Comes to You</h3>
-        <p>Our providers are on-site at your community—no transportation needed. You receive consistent, familiar care from practitioners who know you.</p>
+        <h3 data-content="patients.cards.0.title">Care That Comes to You</h3>
+        <p data-content="patients.cards.0.description">Our providers are on-site at your community—no transportation needed. You receive consistent, familiar care from practitioners who know you.</p>
       </div>
       <div class="value-card fade-up" style="transition-delay:0.1s">
         <div class="value-icon">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
         </div>
-        <h3>Whole-Person Support</h3>
-        <p>From medical needs to mental health, our team addresses your complete well-being with compassion and attention to what matters most to you.</p>
+        <h3 data-content="patients.cards.1.title">Whole-Person Support</h3>
+        <p data-content="patients.cards.1.description">From medical needs to mental health, our team addresses your complete well-being with compassion and attention to what matters most to you.</p>
       </div>
       <div class="value-card fade-up" style="transition-delay:0.2s">
         <div class="value-icon">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
-        <h3>Peace of Mind for Families</h3>
-        <p>Families can rest easier knowing a dedicated care team is available on-site, communicating regularly and keeping your loved one's health on track.</p>
+        <h3 data-content="patients.cards.2.title">Peace of Mind for Families</h3>
+        <p data-content="patients.cards.2.description">Families can rest easier knowing a dedicated care team is available on-site, communicating regularly and keeping your loved one's health on track.</p>
       </div>
     </div>
   </div>
@@ -254,11 +242,11 @@
   <div class="container">
     <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;">
       <div class="fade-up">
-        <div class="section-label">Join Our Team</div>
-        <h2 class="section-title" style="margin-bottom:8px;">Make a difference in post-acute care.</h2>
-        <p class="section-sub">We're looking for Nurse Practitioners, Licensed Mental Health Clinicians, and Physicians who are passionate about improving outcomes for patients in skilled nursing and assisted living communities.</p>
+        <div class="section-label" data-content="careers.label">Join Our Team</div>
+        <h2 class="section-title" style="margin-bottom:8px;" data-content="careers.headline">Make a difference in post-acute care.</h2>
+        <p class="section-sub" data-content="careers.description">We're looking for Nurse Practitioners, Licensed Mental Health Clinicians, and Physicians who are passionate about improving outcomes for patients in skilled nursing and assisted living communities.</p>
       </div>
-      <a href="https://sites.hireology.com/mpachealthcare/index.html" target="_blank" class="btn btn-primary fade-up">View Open Positions →</a>
+      <a href="https://sites.hireology.com/mpachealthcare/index.html" target="_blank" class="btn btn-primary fade-up" data-content="careers.buttonText" data-href="careersUrl">View Open Positions →</a>
     </div>
   </div>
 </section>
@@ -272,14 +260,14 @@
           <div class="logo-mark">M</div>
           MPAC Healthcare
         </div>
-        <p>Raising the standard in post-acute care. Proactive, patient-centered healthcare for skilled nursing and post-acute facilities nationwide.</p>
+        <p data-content="footer.tagline">Raising the standard in post-acute care. Proactive, patient-centered healthcare for skilled nursing and post-acute facilities nationwide.</p>
       </div>
       <div>
         <h4>Services</h4>
         <ul class="footer-links">
-          <li><a href="#services">Primary Care</a></li>
-          <li><a href="#services">Mental Health</a></li>
-          <li><a href="#services">Physician Services</a></li>
+          <li><a href="#services" data-content="services.cards.0.title">Primary Care</a></li>
+          <li><a href="#services" data-content="services.cards.1.title">Mental Health</a></li>
+          <li><a href="#services" data-content="services.cards.2.title">Physician Services</a></li>
         </ul>
       </div>
       <div>
@@ -294,16 +282,16 @@
       <div>
         <h4>Contact</h4>
         <ul class="footer-links">
-          <li><a href="tel:8886604425">(888) 660-4425</a></li>
-          <li><a href="mailto:info@mpachealthcare.com">info@mpachealthcare.com</a></li>
-          <li style="color:var(--mpac-lightest-blue); font-size:14px; line-height:1.6; margin-top:8px;">
+          <li><a href="tel:8886604425" data-content-phone>(888) 660-4425</a></li>
+          <li><a href="mailto:info@mpachealthcare.com" data-content-email>info@mpachealthcare.com</a></li>
+          <li style="color:var(--mpac-lightest-blue); font-size:14px; line-height:1.6; margin-top:8px;" data-content="address">
             2045 W Grand Ave Ste B #28354<br>Chicago, IL 60612
           </li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 MPAC Healthcare. All rights reserved.</span>
+      <span data-content-copyright>&copy; 2026 MPAC Healthcare. All rights reserved.</span>
       <div style="display:flex;gap:20px;">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Use</a>
@@ -335,19 +323,19 @@
     <!-- MISSION -->
     <section class="about-section">
       <div class="container">
-        <div class="section-label">Our Mission</div>
-        <h2 class="section-title">Raising the standard in post-acute care.</h2>
-        <p class="about-mission-text">MPAC Healthcare is dedicated to transforming post-acute care by embedding proactive, patient-centered clinical teams directly into skilled nursing and assisted living communities. We believe every patient deserves access to high-quality medical and behavioral health services — right where they live.</p>
-        <p class="section-sub" style="margin-top:24px; max-width:720px;">Our mission is to prevent complications before they escalate, reduce unnecessary hospital readmissions, and deliver measurable improvements in patient outcomes — all while lowering costs across the healthcare system.</p>
+        <div class="section-label" data-content="about.mission.label">Our Mission</div>
+        <h2 class="section-title" data-content="about.mission.headline">Raising the standard in post-acute care.</h2>
+        <p class="about-mission-text" data-content="about.mission.text">MPAC Healthcare is dedicated to transforming post-acute care by embedding proactive, patient-centered clinical teams directly into skilled nursing and assisted living communities. We believe every patient deserves access to high-quality medical and behavioral health services — right where they live.</p>
+        <p class="section-sub" style="margin-top:24px; max-width:720px;" data-content="about.mission.subtext">Our mission is to prevent complications before they escalate, reduce unnecessary hospital readmissions, and deliver measurable improvements in patient outcomes — all while lowering costs across the healthcare system.</p>
       </div>
     </section>
 
     <!-- GEOGRAPHIC FOOTPRINT -->
     <section class="about-section about-section-alt">
       <div class="container">
-        <div class="section-label">Where We Serve</div>
-        <h2 class="section-title">Our geographic footprint.</h2>
-        <p class="section-sub">MPAC Healthcare partners with post-acute facilities across the country, bringing our proven care model to communities that need it most.</p>
+        <div class="section-label" data-content="about.geography.label">Where We Serve</div>
+        <h2 class="section-title" data-content="about.geography.headline">Our geographic footprint.</h2>
+        <p class="section-sub" data-content="about.geography.description">MPAC Healthcare partners with post-acute facilities across the country, bringing our proven care model to communities that need it most.</p>
         <div class="us-map-wrap">
           <img src="images/usmap.png" alt="MPAC Healthcare geographic footprint — opening markets highlighted across the United States" class="us-map">
         </div>
@@ -357,9 +345,9 @@
     <!-- LEADERSHIP -->
     <section class="about-section">
       <div class="container">
-        <div class="section-label">Leadership</div>
-        <h2 class="section-title">Meet our team.</h2>
-        <p class="section-sub">The people behind MPAC Healthcare bring decades of experience in post-acute care, clinical operations, and healthcare leadership.</p>
+        <div class="section-label" data-content="about.leadership.label">Leadership</div>
+        <h2 class="section-title" data-content="about.leadership.headline">Meet our team.</h2>
+        <p class="section-sub" data-content="about.leadership.description">The people behind MPAC Healthcare bring decades of experience in post-acute care, clinical operations, and healthcare leadership.</p>
         <div class="leadership-grid" id="leadershipGrid"></div>
       </div>
     </section>
@@ -386,9 +374,9 @@
       </div>
     </div>
     <div class="contact-form-body">
-      <div class="section-label">Get In Touch</div>
-      <h2 class="section-title" style="font-size:clamp(22px,3vw,30px);">We'd love to hear from you.</h2>
-      <p class="section-sub" style="margin-bottom:28px;">Fill out the form below and our team will get back to you shortly.</p>
+      <div class="section-label" data-content="contactForm.label">Get In Touch</div>
+      <h2 class="section-title" style="font-size:clamp(22px,3vw,30px);" data-content="contactForm.headline">We'd love to hear from you.</h2>
+      <p class="section-sub" style="margin-bottom:28px;" data-content="contactForm.description">Fill out the form below and our team will get back to you shortly.</p>
       <form action="https://formsubmit.co/info@mpachealthcare.com" method="POST" class="contact-form" id="contactForm">
         <input type="hidden" name="_subject" value="New Contact from MPAC Website">
         <input type="hidden" name="_captcha" value="false">
@@ -415,12 +403,13 @@
           <label for="contactMessage">Message</label>
           <textarea id="contactMessage" name="message" rows="4" required placeholder="How can we help?"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message →</button>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;" data-content="contactForm.submitButton">Send Message →</button>
       </form>
     </div>
   </div>
 </div>
 
+<script src="js/content.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
